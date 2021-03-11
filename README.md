@@ -7,3 +7,5 @@ Cases where different kernels submitting to different CUDA streams or to the sam
 
 ## Multiple process
 Two CPU processes submitting jobs to the CPU, operating the same GPU data. We synchronize them with SHM (as semaphore), GPU active waiting and cuStreamWaitValue (driver API)
+
+# Always launching the sender first
